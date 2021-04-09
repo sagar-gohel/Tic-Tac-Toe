@@ -84,6 +84,20 @@ public class MainActivity extends AppCompatActivity {
         status.setText("X's Turn - Tap to play");
 
     }
+    public void directReset(View view){
+        ((ImageView)findViewById(R.id.imageView0)).setImageResource(0);
+        ((ImageView)findViewById(R.id.imageView1)).setImageResource(0);
+        ((ImageView)findViewById(R.id.imageView2)).setImageResource(0);
+        ((ImageView)findViewById(R.id.imageView3)).setImageResource(0);
+        ((ImageView)findViewById(R.id.imageView4)).setImageResource(0);
+        ((ImageView)findViewById(R.id.imageView5)).setImageResource(0);
+        ((ImageView)findViewById(R.id.imageView6)).setImageResource(0);
+        ((ImageView)findViewById(R.id.imageView7)).setImageResource(0);
+        ((ImageView)findViewById(R.id.imageView8)).setImageResource(0);
+
+        TextView status = findViewById(R.id.status);
+        status.setText("X's Turn - Tap to play");
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
